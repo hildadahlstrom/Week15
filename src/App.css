@@ -1,0 +1,56 @@
+:root {
+  --brown: #281d17;
+  --light-brown: #a78682;
+  --off-white: #f7f3e3;
+  --fern-green: #5b7553;
+  --myrtle-green: #347266;
+}
+* {
+  background: var(--off-white);
+  color: var(--brown);
+}
+.packing {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+  color: var(--fern-green);
+}
+.new-trip-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 10px 10vw;
+  border: var(--brown) 2px solid;
+}
+.trip-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+button.submit-button {
+  background: var(--myrtle-green);
+  color: var(--off-white);
+  border: var(--brown) 2px;
+}
+.trip-submit {
+  padding: 10px;
+  margin: 10px;
+  width: 20vw;
+  height: 5vh;
+}
+input {
+  width: 50vw;
+}
+.list-item,
+.new-item-form {
+  border-bottom: solid var(--brown) 1px;
+  padding: 5px;
+}
+li::marker {
+  content: none;
+}
+.each-trip {
+  border-bottom: solid var(--brown) 3px;
+  padding-top: 10px;
+}
