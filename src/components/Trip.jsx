@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import NewItemForm from './forms/NewItemForm';
 import PackingItem from './PackingItem';
 
-const itemId = 0;
-
 function Trip({trip, updateTrips, deleteTrip}) {
     const tripName = trip.tripName;
     const tripDate = trip.dateString;
@@ -19,11 +17,7 @@ function Trip({trip, updateTrips, deleteTrip}) {
     }
 
     const deleteItem = (item) => {
-            console.log('item: ' + item.id)
-        const newItemArray = items.filter((x) => {
-            console.log(x._id);
-            return x._id !== item.id;
-        })
+        const newItemArray = items.filter((x) => x._id !== item.id)
         setItems(newItemArray);
         return updateTrips({
             ...trip,
